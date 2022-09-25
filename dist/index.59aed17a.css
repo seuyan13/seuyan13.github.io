@@ -981,6 +981,8 @@ a:hover {
 }
 
 .slide {
+  width: 100%;
+  height: 50%;
   border: 2px solid;
 }
 
@@ -1203,7 +1205,7 @@ a:hover {
 
 .downloadBx .btn-cv {
   width: 80%;
-  height: 50px;
+  height: 50%;
   text-align: center;
   color: #000;
   background-color: #fff;

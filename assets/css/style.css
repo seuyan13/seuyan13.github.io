@@ -843,7 +843,6 @@ a:hover {
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 auto 30px;
   border-radius: 25px;
   height: auto;
   max-width: 100%;
@@ -851,7 +850,7 @@ a:hover {
 }
 
 .skillBx-row {
-  margin: 0 50 50 0px;
+  margin: 0px 50px 50px 0px;
 }
 
 .skillBx h3 {
@@ -874,7 +873,7 @@ a:hover {
   margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 50;
+  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -1105,7 +1104,13 @@ a:hover {
 .slide {
   border: 2px solid;
   width: 100%;
-  height: 50%;
+  height: 300px;
+  max-height: 300px;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 300px;
 }
 
 #overlayProject {

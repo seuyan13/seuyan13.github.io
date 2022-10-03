@@ -830,7 +830,6 @@ a:hover {
   padding: 3rem 1.25rem;
   position: relative;
   background-color: #f5f5f5;
-  z-index: 2;
   margin-bottom: -2rem;
   margin-top: -4%;
 }
@@ -838,6 +837,7 @@ a:hover {
 .skillBx {
   padding: 3rem 1.25rem;
   position: relative;
+  justify-content: center;
   background-color: #fff;
   margin-bottom: 3rem;
   z-index: 2;
@@ -849,7 +849,7 @@ a:hover {
 }
 
 .skillBx-row {
-  margin: 0px 50px 50px 0px;
+  margin: 0em 1em 0em 1em;
 }
 
 .skillBx h3 {
@@ -1379,7 +1379,7 @@ a:hover {
 .downloadBx .btn-cv {
   width: 80%;
   height: 50%;
-  margin: 3em 0 30 50;
+  margin: 3em 0 3em 2.5em;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   box-shadow: 0 1px 2px #5e5d5b;

@@ -22,6 +22,10 @@ h6 {
   color: #1e1e1e;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -1062,10 +1066,8 @@ a:hover {
   z-index: 10;
   background-color: white;
   height: 600px;
-  width: 800px;
-  max-width: 80%;
+  max-width: 60%;
   display: none;
-  overflow-y: scroll;
   transition: all 0.3s;
 }
 
@@ -1075,6 +1077,15 @@ a:hover {
   box-shadow: 0 10px 15px rgb(37, 37, 37);
   opacity: 1;
   pointer-events: visible;
+  overflow: hidden;
+}
+
+.modal .swiper-container {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 30px 0 0;
 }
 
 .modal-header {
@@ -1103,6 +1114,7 @@ a:hover {
 
 .modal-body {
   padding: 10px 15px;
+  height: auto;
 }
 
 .modal-body li {
@@ -1117,15 +1129,24 @@ a:hover {
 }
 
 .slide img {
+  width: 100%;
+  height: 90%;
   max-width: 100%;
   max-height: 90%;
 }
 
+.slide .img-portfolio {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .slide .slide-text {
   color: black;
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 1em 0 0 0;
   position: relative;
   bottom: 8px;
   width: 100%;
@@ -1149,22 +1170,6 @@ a:hover {
   pointer-events: all;
 }
 
-.dot {
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  margin: 20px 15px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  font-size: 0;
-}
-
-.dot:hover {
-  background-color: #717171;
-}
-
 .description {
   padding: 1% 4% 4% 4%;
   font-family: Arial, Helvetica, sans-serif;
@@ -1181,13 +1186,13 @@ a:hover {
 }
 
 .modal-body-left {
-  margin: auto;
-  float: inline-end;
+  margin: 0 auto 2em auto;
+  text-align: center;
 }
 
 .modal-body-right {
   margin: auto;
-  float: inline-end;
+  text-align: center;
 }
 
 .modal-body-right p {
@@ -1343,12 +1348,12 @@ a:hover {
 .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*--------------------------------------------------------------
@@ -1360,6 +1365,11 @@ a:hover {
 
 .contact-mf {
   margin-top: 4rem;
+}
+
+.contact-stocial {
+  margin-top: 2em;
+  text-align: center;
 }
 
 .ico-circle-a:hover {
@@ -1516,4 +1526,34 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* 세로축 스크롤바 길이 */
+  height: 6px; /* 가로축 스크롤바 길이 */
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #ddd;
+}
+/* Top, Left 방향의 이동버튼 */
+::-webkit-scrollbar-button:start {
+  height: 0;
+}
+/* Bottom, Right 방향의 이동버튼 */
+::-webkit-scrollbar-button:end {
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #fff; /* 우측 하단의 코너 부분 */
+}
+::-webkit-resizer {
+  background-color: #fff;
 }

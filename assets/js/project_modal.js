@@ -73,7 +73,7 @@ function showSlides(n) {
 document.addEventListener(
   "DOMContentLoaded",
   function () {
-    showSlides(slideIndex);
+    // showSlides(slideIndex);
   },
   false
 );

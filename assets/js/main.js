@@ -214,16 +214,19 @@
   });
 
   /**
-   * Testimonials slider
+   * Modal slider
    */
-  new Swiper(".testimonials-slider", {
+  new Swiper(".swiper-container", {
     speed: 600,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false,
     },
-    slidesPerView: "auto",
+    spaceBetween: 20,
+    slidesPerView: 1,
+    centeredSlides: true,
+
     pagination: {
       el: ".swiper-pagination",
       type: "bullets",
@@ -231,22 +234,6 @@
     },
   });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper(".portfolio-details-slider", {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-  });
 
   /**
    * Preloader

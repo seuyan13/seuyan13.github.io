@@ -782,6 +782,12 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.profile-photo {
+  width: "250";
+  height: "250";
+  border-radius: 5%;
+}
+
 .expertise {
   margin: 1.5em;
   padding: 1.5em;

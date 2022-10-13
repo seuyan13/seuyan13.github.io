@@ -1070,7 +1070,7 @@ a:hover {
   z-index: 10;
   background-color: white;
   height: 600px;
-  max-width: 60%;
+  max-width: 85%;
   display: none;
   transition: all 0.3s;
 }
@@ -1393,7 +1393,7 @@ a:hover {
 .downloadBx .btn-cv {
   width: 80%;
   height: 50%;
-  margin: 3em 0 3em 2.5em;
+  margin: 3em 0em 3em 2.3em;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   box-shadow: 0 1px 2px #5e5d5b;
